@@ -112,7 +112,7 @@
     #splash.hidden { opacity: 0; pointer-events: none; transform: scale(1.06); }
 
     .envelope-wrap {
-      width: min(650px, 94vw); /* Increased size */
+      width: min(850px, 98vw); /* Increased size to be very large */
       animation: floatY 3.5s ease-in-out infinite;
       filter: drop-shadow(0 28px 48px rgba(0,0,0,0.45));
     }
@@ -607,8 +607,8 @@
 
 <!-- ══ AUDIO ══ -->
 <audio id="bg-music" loop preload="none">
-  <!-- Calm classical piano string track -->
-  <source src="https://cdn.pixabay.com/download/audio/2022/02/07/audio_6a3fc26ea3.mp3" type="audio/mpeg" />
+  <!-- Calm classical piano track -->
+  <source src="https://cdn.pixabay.com/download/audio/2021/11/24/audio_9242d5fdef.mp3" type="audio/mpeg" />
 </audio>
 
 <!-- ══ SPLASH ══ -->
@@ -857,8 +857,25 @@
     <p class="closing-meta mt-1">TomorrowLand · بنها · الفلل</p>
     
     <!-- Credit Link -->
-    <div style="margin-top: 4rem; font-family: var(--font-en); font-size: 0.85rem; color: var(--fg-muted); letter-spacing: 0.05em; opacity: 0.8;">
-      by: <a href="https://abdosaidedle-pixel.github.io/Portofolio-Abdo-main/" target="_blank" style="color: var(--gold); text-decoration: underline;">Abdo said</a>
+    <div style="margin-top: 5rem; display: flex; justify-content: center;">
+      <a href="https://abdosaidedle-pixel.github.io/Portofolio-Abdo-main/" target="_blank" style="
+        font-family: 'Cormorant Garamond', 'Amiri', serif; 
+        font-size: 1.1rem; 
+        color: var(--gold); 
+        background-color: var(--bg-sec);
+        border: 1px solid var(--gold); 
+        border-radius: 999px; 
+        padding: 0.6rem 2rem; 
+        text-decoration: none; 
+        box-shadow: 0 4px 20px rgba(184, 149, 74, 0.15);
+        transition: all 0.4s ease;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.6rem;
+      " onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 8px 25px rgba(184, 149, 74, 0.3)'; this.style.backgroundColor='var(--gold)'; this.style.color='var(--bg)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 20px rgba(184, 149, 74, 0.15)'; this.style.backgroundColor='var(--bg-sec)'; this.style.color='var(--gold)';">
+        <span style="font-size: 0.75rem; opacity: 0.8; text-transform: uppercase; letter-spacing: 0.25em;">Designed by</span>
+        <strong style="font-weight: 600; font-size: 1.35rem; letter-spacing: 0.05em;">Abdo said</strong>
+      </a>
     </div>
   </div>
 </section>
